@@ -1,0 +1,47 @@
+{
+  "name": "marketplace-modular",
+  "version": "1.0.0",
+  "description": "Projeto Final Módulo 4 Full Cycle - Nível A (Music Journal & Store)",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src tests --ext .ts",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "db:seed": "tsx prisma/seed.ts"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@fastify/swagger": "^8.15.0",
+    "@fastify/swagger-ui": "^4.1.0",
+    "@prisma/client": "^5.22.0",
+    "bullmq": "^5.15.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.29.1",
+    "ioredis": "^5.4.1",
+    "lru-cache": "^10.4.3",
+    "pino": "^9.14.0",
+    "pino-pretty": "^11.3.0",
+    "prom-client": "^15.1.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^13.1.3",
+    "@types/node": "^20.11.24",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "@vitest/coverage-v8": "^1.3.1",
+    "eslint": "^8.57.0",
+    "prisma": "^5.22.0",
+    "supertest": "^6.3.4",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  }
+}
